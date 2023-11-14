@@ -1,5 +1,5 @@
 body {
-  font-family: 'Tanker', sans-serif;
+  font-family: 'Clash Grotesk', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -7,11 +7,18 @@ body {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.416), rgba(4, 9, 30, 0.345)), url(../Hero.jpg);
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.416),
+      rgba(4, 9, 30, 0.345)
+    ),
+    url(../images/Hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+.parkHeader {
+  min-height: 50vh;
 }
 
 nav {
@@ -23,7 +30,7 @@ nav {
 }
 
 nav img {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 nav h2 {
@@ -49,26 +56,26 @@ nav a {
 }
 
 nav img {
-  margin-right: 10px; 
-  width: 50px; 
-  height: 50px; 
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
 nav h2 {
   margin: 0;
   color: #fff;
-  font-size: 33px; 
+  font-size: 33px;
 }
 
 .content {
-  text-align: center; 
+  text-align: center;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -88,7 +95,7 @@ p {
 }
 
 /* Button styles */
-button {
+.button {
   padding: 8px 16px;
   background: #fff;
   color: #333;
@@ -96,37 +103,75 @@ button {
   cursor: pointer;
   border-radius: 20%;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
-button:hover {
+.button:hover {
   background: #ffa500;
 }
 
 .MountainGuy {
-  width: 20%; 
-  max-width: 300px; 
-  margin: 0 auto; 
-  display: block; 
+  width: 20%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
 }
 
 .mission {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .mission-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; 
+  max-width: 1200px;
   width: 100%;
   margin-bottom: 30%;
 }
 
 .mission-col {
   flex: 1;
-  margin: 0 10px; 
+  margin: 0 10px;
   text-align: center;
 }
 
+.search {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.searchSelect {
+  max-width: 120px;
+}
+#searchInput {
+}
+
+.parks {
+  padding: 30px;
+}
+.parks > h1 {
+  text-align: center;
+}
+.parksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.parkCard {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 0px 5px 11px 4px rgba(0, 0, 0, 0.2);
+}
