@@ -10,8 +10,9 @@
       crossorigin="anonymous"
     />
     <!-- FontShare StyleSheet-->
+
     <link
-      href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700&display=swap"
       rel="stylesheet"
     />
 
@@ -20,7 +21,7 @@
   </head>
 
   <body>
-    <section class="header">
+    <section class="header parkHeader">
       <nav>
         <a href="index.html">
           <img src="images/person.PNG" alt="CozyTrails Logo" />
@@ -32,6 +33,23 @@
           <li><a href="mountains.html">Mountains</a></li>
         </ul>
       </nav>
+      <h1 class="choose-park">Choose a Mountain</h1>
+      <form class="d-flex search" role="search">
+        <select class="form-select" id="mountains">
+          <option value="">Choose a mountain</option>
+          <!-- add mountains here-->
+        </select>
+      </form>
     </section>
+
+    <section class="parks">
+      <h1>Mountain Information</h1>
+      <div class="mountainContainer">
+        <!--display mountain info here-->
+      </div>
+    </section>
+
+    <script src="./scripts/mountainData.js"></script>
+    <script src="./scripts/mountain.js"></script>
   </body>
 </html>

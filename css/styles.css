@@ -1,5 +1,5 @@
 body {
-  font-family: 'Clash Grotesk', sans-serif;
+  font-family: "Clash Grotesk", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +11,7 @@ body {
       rgba(4, 9, 30, 0.416),
       rgba(4, 9, 30, 0.345)
     ),
-    url(../images/Hero.jpg);
+    url(../images/Hero5.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,6 +27,9 @@ nav {
   align-items: center;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.334);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 nav img {
@@ -74,6 +77,10 @@ nav h2 {
   font-size: 33px;
 }
 
+.search-input {
+  border-radius: 5px;
+}
+
 .content {
   text-align: center;
   color: #fff;
@@ -83,27 +90,28 @@ nav h2 {
   transform: translate(-50%, -50%);
 }
 
-h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 18px;
-  margin-top: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 10px; /* Add some padding to the <p> element */
-   
-}
-
 /* Button styles */
+
+.search-button {
+  border-radius: 10px;
+  background: #fff; /* Same color as your existing button */
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: #ffa500;
+}
+
 .button {
   padding: 8px 16px;
   background: #fff;
   color: #333;
   border: none;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 0.3s ease;
   text-decoration: none;
 }
@@ -132,12 +140,11 @@ p {
   max-width: 1200px;
   width: 100%;
   margin-bottom: 30%;
-  
 }
 
-.text{
+.text {
   background-color: rgba(226, 211, 211, 0.392);
-    border-radius: 80px;
+  border-radius: 80px;
 }
 
 .mission-col {
@@ -154,9 +161,7 @@ p {
   gap: 10px;
   align-items: center;
 }
-.searchSelect {
-  max-width: 120px;
-}
+
 #searchInput {
 }
 
@@ -167,12 +172,13 @@ p {
   text-align: center;
 }
 
-.choose-park{
+.choose-park {
   text-align: center;
   margin-top: 40px;
   color: #fff;
 }
-.parksContainer {
+.parksContainer,
+.mountainContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -181,11 +187,11 @@ p {
 }
 
 .parkCard {
+  width: 400px;
   background-color: #fff;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
   box-shadow: 0px 5px 11px 4px rgba(0, 0, 0, 0.2);
 }

@@ -11,7 +11,10 @@
     />
     <!-- FontShare StyleSheet-->
 
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700&display=swap" rel="stylesheet">
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- MAIN STYLESHEET -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -30,24 +33,20 @@
           <li><a href="mountains.html">Mountains</a></li>
         </ul>
       </nav>
-      <h1 class="choose-park">CHOOSE A PARK</h1>
+      <h1 class="choose-park">Choose a Park</h1>
       <form class="d-flex search" role="search">
-        <select class="form-select searchSelect" id="searchType">
+        <select class="form-select" id="searchType">
           <option value="location">Location</option>
           <option value="park-type">Park Type</option>
         </select>
-        <select class="form-select searchSelect" id="location">
+        <select class="form-select" id="location">
           <option value="">Choose location</option>
-          <!-- add location s here-->
+          <!-- add locations here-->
         </select>
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-          id="searchInput"
-        />
-        <button class="btn btn-primary" type="submit">Search</button>
+        <select class="form-select" id="park-type">
+          <option value="">Choose park type</option>
+          <!-- add park type here-->
+        </select>
       </form>
     </section>
 
@@ -59,6 +58,7 @@
     </section>
 
     <script src="./scripts/locationData.js"></script>
+    <script src="./scripts/parkTypeData.js"></script>
     <script src="./scripts/nationalParkData.js"></script>
     <script src="./scripts/parks.js"></script>
   </body>
