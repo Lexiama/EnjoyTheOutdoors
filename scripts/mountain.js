@@ -26,8 +26,8 @@ window.onload = () => {
        <p>Mountain Name: ${mountain.name}</p> 
        <p>Description: ${mountain.desc}</p>
        <p>Elevation: ${mountain.elevation}</p>
-       <p>Sunrise Time: ${sunsetData.results.sunrise}</p>
-       <p>Sunset Time: ${sunsetData.results.sunset}</p>
+       <p>Sunrise Time(UTC): ${sunsetData.results.sunrise}</p>
+       <p>Sunset Time(UTC): ${sunsetData.results.sunset}</p>
        <img src= 'images/${mountain.img}' alt="mountain" />
     </div>
   `;

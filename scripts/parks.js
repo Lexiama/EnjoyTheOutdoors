@@ -9,7 +9,7 @@ window.onload = () => {
   // hide "choose park type select"
   parkTypeSelect.style.display = "none";
 
-   locationsArray.forEach((location) => {
+  locationsArray.forEach((location) => {
     locationSelect.innerHTML += `<option value="${location}">${location}</option>`;
   });
 
@@ -17,7 +17,6 @@ window.onload = () => {
     parkTypeSelect.innerHTML += `<option value="${parkType}">${parkType}</option>`;
   });
 
- 
   searchSelect.addEventListener("change", searchSelectOnChange);
 
   locationSelect.addEventListener("change", locationSelectOnchange);
