@@ -16,6 +16,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
+ 
 }
 .parkHeader {
   min-height: 50vh;
@@ -56,9 +58,6 @@ nav li {
 nav a {
   text-decoration: none;
   color: #fff;
- 
-  
-
 }
 
 nav img {
@@ -76,11 +75,11 @@ nav a {
 }
 
 nav a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 5px;
-  background-color:#ffa500;
+  background-color: #ffa500;
   transition: width 0.3s ease;
   position: absolute;
   bottom: 0;
@@ -96,21 +95,14 @@ nav h2 {
   font-size: 33px;
 }
 
+
 .search-input {
   border-radius: 5px;
-  padding: 5px; 
-  font-size: 14px; 
+  padding: 5px;
+  font-size: 14px;
 }
 
 
-.content {
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* Button styles */
 
@@ -121,12 +113,10 @@ nav h2 {
   border: none;
   cursor: pointer;
   transition: background 0.6s ease;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   font-size: 14px;
-  box-shadow: 0 4px 8px rgba(18, 18, 18, 0.2)
+  box-shadow: 0 4px 8px rgba(18, 18, 18, 0.2);
 }
-
-
 
 .search-button:hover {
   background: #ffa500;
@@ -138,37 +128,60 @@ nav h2 {
   color: #333;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 6px;
   transition: background 0.6s ease;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(172, 168, 168, 0.2)
+  box-shadow: 0 4px 8px rgba(172, 168, 168, 0.2);
+  margin-right: 2px;
 }
 
 .button:hover {
   background: #ffa500;
 }
 
-.fullcontent {
-  background-color: #dfdada;
-  min-height: 100vh;
- 
+.btn-outline-secondary {
+  color: #ffa500;
+  background-color: transparent;
+  border: 2px solid #ffa500;
 }
 
-.fullcontent::before {
-  z-index: 888;
-  content: '';
+
+.btn-outline-secondary:hover {
+  background-color: #ffa500;
+  border-color: #ffa500;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
   position: absolute;
-  width: 100%;
-  height: 50px;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(transparent, #dfdada); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
+.fullcontent {
+  background-color: rgba(255, 255, 255, 0.415);
+  min-height: 100vh;
+  
+}
+
+
+.welcomeText {
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
 
 .MountainGuy {
-  width: 20%;
+  width: 80%;
   max-width: 300px;
   margin: 0 auto;
   display: block;
@@ -178,23 +191,26 @@ nav h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center ;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .mission-container {
   display: inline-block;
-  
+
 }
 
 .mission-col {
   margin: 0 20px;
+  margin-bottom: 70px;
+  margin-top: 0px;
 }
 
 .text {
   background-color: rgba(157, 164, 157, 0.392);
-  border-radius: 80px;
+  border-radius: 300%;
 }
-
 
 .search {
   max-width: 50%;
@@ -205,7 +221,29 @@ nav h2 {
   align-items: center;
 }
 
+
 #searchInput {
+}
+
+.image-container {
+  display: flex;
+}
+/* to scroll*/
+.scroll-container {
+  background-color: #fff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  
+}
+
+.scroll-container img {
+  padding: 10px;
+  transition: filter 0.3s ease;
+}
+
+.scroll-container img:hover {
+  filter: brightness(70%);
 }
 
 .parks {
@@ -238,3 +276,5 @@ nav h2 {
   flex-direction: column;
   box-shadow: 0px 5px 11px 4px rgba(0, 0, 0, 0.2);
 }
+
+
