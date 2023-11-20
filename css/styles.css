@@ -17,7 +17,6 @@ body {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
- 
 }
 .parkHeader {
   min-height: 50vh;
@@ -95,14 +94,11 @@ nav h2 {
   font-size: 33px;
 }
 
-
 .search-input {
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
 }
-
-
 
 /* Button styles */
 
@@ -145,10 +141,9 @@ nav h2 {
   border: 2px solid #ffa500;
 }
 
-
 .btn-outline-secondary:hover {
   background-color: #ffa500;
-  border-color: #ffa500;
+  border-color: #ffa500; 
 }
 
 .content {
@@ -160,13 +155,10 @@ nav h2 {
   transform: translate(-50%, -50%);
 }
 
-
 .fullcontent {
   background-color: rgba(255, 255, 255, 0.415);
   min-height: 100vh;
-  
 }
-
 
 .welcomeText {
   margin-top: 50px;
@@ -199,7 +191,6 @@ nav h2 {
 
 .mission-container {
   display: inline-block;
-
 }
 
 .mission-col {
@@ -222,20 +213,18 @@ nav h2 {
   align-items: center;
 }
 
-
 #searchInput {
 }
 
 .image-container {
   display: flex;
 }
-/* to scroll*/
+/* w3 to scroll*/
 .scroll-container {
   background-color: #fff;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
-  
 }
 
 .scroll-container img {
@@ -259,6 +248,8 @@ nav h2 {
   margin-top: 40px;
   color: #fff;
 }
+
+/* park card */
 .parksContainer,
 .mountainContainer {
   display: flex;
@@ -277,6 +268,3 @@ nav h2 {
   flex-direction: column;
   box-shadow: 0px 5px 11px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-
