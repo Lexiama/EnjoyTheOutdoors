@@ -52,7 +52,7 @@ window.onload = () => {
              <p>Type: ${park.Location.type}</p>
           </div>
       `;
-    } // the back ticks are helping me because the "" wont work
+    } 
   }
 
   function parkTypeSelectOnchange() {
